@@ -24,6 +24,13 @@ Text Rendering Example:
 canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
 # Put your code below
-
+x = 100
+y = 50
+for i in range(4):
+    text="ice cream"
+    if y == 140:
+        text = "banana"
+    canvas.create_text(x, y, text=text, font=("Arial", 20))
+    y = y + 30
 
 root.mainloop()
